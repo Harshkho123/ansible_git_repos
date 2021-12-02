@@ -1,0 +1,12 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+      - name: i want to install webserver
+        apt:
+           name: apache2
+           state: present
+      - name: Install the build dependencies for package "foo"
+        apt:
+           name: foo
+           state: present
