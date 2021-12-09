@@ -6,9 +6,10 @@
        apt:
         name: apache2
         state: present 
-         
-     - name: "I want to install webserver on linux"
-       yum:
-        name: httd
-        state: present 
+       when: ansible_os_family=="Debian"
+
+     - name: "I want to remove webserver from ubuntu"
+       apt:
+        name: apache2 
+        state: absent 
          
