@@ -7,8 +7,5 @@
         name: apache2
         state: present 
       
-     - name: "I want to install webserver on linux"
-       yum:
-        name: httd
-        state: present 
+
          
