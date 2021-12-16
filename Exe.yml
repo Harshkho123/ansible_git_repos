@@ -2,7 +2,12 @@
  - hosts: all 
    become: yes
    tasks: 
-   - name: "I want to install webserver"
+   - name: "I want to install webserver on ubuntu"
      apt: 
       name: apache2
       state: present 
+   - name: "I want to install webserver on linux"
+     apt: 
+       name: httpd
+       state: present 
+       
