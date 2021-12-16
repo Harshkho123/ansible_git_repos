@@ -6,12 +6,12 @@
    - name: "I want to install webserver on ubuntu"
      apt: 
       name: "{{myubuntuwebsers}}"
-      state: absent 
+      state: present 
      when: 
          ansible_os_family == "Debian"
    - name: "I want to install webserver on linux"
      yum: 
        name: "{{mylinuxwebservers}}"
-       state: absent 
+       state: present 
      when: 
          ansible_os_family == "RedHat"
