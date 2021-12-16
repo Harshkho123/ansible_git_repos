@@ -1,16 +1,17 @@
 --- 
  - hosts: all 
    become: yes
-   tasks: 
+   
+   tasks:  
    - name: "I want to install webserver on ubuntu"
      apt: 
-      name: apache2
-      state: present 
+      name: {{"myubuntuwebsers"}}
+      state: absent 
      when: 
          ansible_os_family == "Debian"
    - name: "I want to install webserver on linux"
      yum: 
-       name: httpd
-       state: present 
+       name: {{"mylinuxwebserverss"}}
+       state: absent 
      when: 
          ansible_os_family == "RedHat"
