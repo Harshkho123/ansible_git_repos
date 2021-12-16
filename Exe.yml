@@ -5,13 +5,13 @@
    tasks:  
    - name: "I want to install webserver on ubuntu"
      apt: 
-      name: {{"myubuntuwebsers"}}
+      name: "{{myubuntuwebsers}}"
       state: absent 
      when: 
          ansible_os_family == "Debian"
    - name: "I want to install webserver on linux"
      yum: 
-       name: {{"mylinuxwebservers"}}
+       name: "{{mylinuxwebservers}}"
        state: absent 
      when: 
          ansible_os_family == "RedHat"
