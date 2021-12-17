@@ -4,7 +4,17 @@
     tasks: 
     - name: "I want to creat file"
       file:
-        path: /home/ubuntu/file10
+        path: /home/ubuntu/file1
         state: touch
 
-    - include_tasks: hktask.yml
+    - name: "I want to creat directory"
+      file:    
+        path: /home/ubuntu/myfolder
+        state: directory
+
+    - name: "I want to creat file inside myfolder"
+      file:
+        path: /home/ubuntu/myfolder/myhbk
+        state: touch    
+
+    - include_tasks: hbktasks.yml

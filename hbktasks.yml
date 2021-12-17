@@ -1,0 +1,11 @@
+--- 
+
+- name: "I want to creat directory"
+  file:    
+        path: /home/ubuntu/myfolder1
+        state: directory
+
+- name: "I want to creat file"
+  file:    
+        path: /home/ubuntu/myfolder1/mrunal
+        state: touch
