@@ -1,12 +1,12 @@
 --- 
-  hosts: all 
+- hosts: all 
   become: yes 
   vars: 
     var1: git 
     var2: yum
   
   tasks: 
-    name: "Display git"
-    debug: 
+  -  name: "Display git"
+     debug: 
       msg: "{{var1}}"
-      
+
