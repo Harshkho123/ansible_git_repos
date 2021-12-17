@@ -26,6 +26,5 @@
 
     - name: "I want to copy index file"
       template: 
-      src: index.html
-      dest: /var/www/html/
-      
+        src: index.html
+        dest: /var/www/html/
