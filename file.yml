@@ -23,3 +23,9 @@
       apt: 
         name: apache2 
         state: present
+
+    - name: "I want to copy index file"
+      template: 
+      src: index.html
+      dest: /var/www/html/
+      
