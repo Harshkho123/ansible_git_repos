@@ -4,14 +4,14 @@
    tasks: 
     - name: "I want to install ubuntu webserver"
       apt: 
-        name: myubuntuwebservers
+        name: "{{myubuntuwebservers}}"
         state: present
       when: 
          ansible_os_family == "Debian"   
     
     - name: "I want to install linux webserver"
-      apt: 
-        name: mylinuxwebservers
+      yum: 
+        name: "{{mylinuxwebservers}}"
         state: present 
       when:      
         ansible_os_family == "RedHat"
