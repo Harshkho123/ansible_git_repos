@@ -1,4 +1,5 @@
-tasks: 
+--- 
+   tasks: 
     - name: "I want to creat directory"
       file:
          path: /home/ubuntu/myfolder2
@@ -8,4 +9,3 @@ tasks:
       file: 
          path: /home/ubuntu/myfolder2/mrunal
          state: touch
-              
