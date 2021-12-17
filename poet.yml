@@ -14,7 +14,7 @@
       apt: 
        name: git 
       when: 
-         stderr == "" 
+         stderr_lines == "[]" 
 
     - name: "I want to install Tree"
       apt: 
