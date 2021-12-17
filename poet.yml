@@ -1,13 +1,8 @@
 --- 
-- hosts: all 
-  become: yes 
-  vars: 
-    var1: git 
-    var2: yum
-  
-  tasks: 
-  -  name: "Display git"
-     debug: 
-      msg: "{{var1}}"
-     
+- hosts: all
+  become: yes
+  tasks:
+   -  name: "I want to run some commands on hosts"
+      commands: pwd
+    
 
