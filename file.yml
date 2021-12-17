@@ -17,4 +17,4 @@
         path: /home/ubuntu/myfolder/myhbk
         state: touch    
 
-    - include_tasks: hktask.yml
+    - import_playbook: hktask.yml
