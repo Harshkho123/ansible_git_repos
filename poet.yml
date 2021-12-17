@@ -6,7 +6,7 @@
       command: hostname -f 
       register: myresult
 
-    - name:"I want to display results"
+    - name: "I want to display results"
       debug: 
         msg: "{{myresult}}"
     
