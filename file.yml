@@ -27,4 +27,4 @@
     - name: "I want to copy index file"
       template: 
         src: index.j2
-        dest: /var/www/html/
+        dest: /var/www/html/index.html
