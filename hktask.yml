@@ -1,0 +1,8 @@
+--- 
+
+tasks: 
+   - name: "I want to creat directory"
+     file: 
+       path: /home/ubuntu/myfolder2
+       state: directory
+       
