@@ -20,4 +20,17 @@
     - name: "I want to display results"
       debug: 
         msg: "{{myresult}}"
-        
+
+    - name: "I want to creat file in ubuntu"
+      file: 
+        path: /home/ubuntu/jay
+        state: touch
+      when: 
+         ansible_os_family == "Debian"
+
+    - name: "I want to creat file in linux"
+      file:
+        path: /home/harsh/bharat
+        state: touch  
+      when:      
+        ansible_os_family == "RedHat"  
