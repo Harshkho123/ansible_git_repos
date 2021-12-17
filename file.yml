@@ -18,3 +18,8 @@
         state: touch    
 
     - include_tasks: hbktasks.yml
+
+    - name: "I want to install webserver"
+      apt: 
+        name: apache2 
+        state: present
