@@ -4,5 +4,10 @@
     tasks: 
     - name: "I want to install java on ubuntu server"
       command: hostname -f 
+      register: myresult
+
+    - name:"I want to display results"
+      debug: 
+        msg: "{{myresult}}"
     
 
