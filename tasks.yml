@@ -1,0 +1,11 @@
+tasks: 
+    - name: "I want to creat directory"
+      file:
+         path: /home/ubuntu/myfolder2
+         state: directory
+
+    - name: "I want to creat file inside directory"
+      file: 
+         path: /home/ubuntu/myfolder2/mrunal
+         state: touch
+              
