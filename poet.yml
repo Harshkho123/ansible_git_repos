@@ -14,10 +14,6 @@
       apt: 
        name: git 
       when: 
-         stderr_lines == "[]" 
+         stdout == "ip-172-31-47-91.us-east-2.compute.internal" 
 
-    - name: "I want to install Tree"
-      apt: 
-       name: tree 
-      when: 
-         stderr != ""  
+   
