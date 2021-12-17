@@ -5,3 +5,8 @@ tasks:
      apt: 
        name: apache2
        state: present
+
+   - name: "I want to creat file"
+     file: 
+        path: /home/ubuntu/file1
+        state: touch    
