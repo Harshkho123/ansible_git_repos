@@ -1,2 +1,2 @@
-myubuntuwebservers: apache2
-mylinuxwebservers: httpd
+myubuntuwebservers: git
+mylinuxwebservers: git
