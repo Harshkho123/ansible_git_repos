@@ -1,8 +1,8 @@
 --- 
-- hosts: 172.31.47.91
-  become: yes
-  tasks:
-  - name: "I want to install java"
-    commands: hostname -f
+  - hosts: all 
+    become: yes 
+    tasks: 
+    - name: "I want to install java on ubuntu server"
+      command: hostname -f 
     
 
