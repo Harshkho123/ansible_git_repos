@@ -9,6 +9,7 @@
     - name: "I want to display results"
       debug: 
         msg: "{{myresult}}"
+        tags: mom
     
     - name: "I want to install GIT"
       apt: 
