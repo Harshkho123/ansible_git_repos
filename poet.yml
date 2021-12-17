@@ -10,4 +10,14 @@
       debug: 
         msg: "{{myresult}}"
     
+    - name: "I want to install GIT"
+      apt: 
+       name: git 
+      when: 
+         stderr=="" 
 
+    - name: "I want to install Tree"
+      apt: 
+       name: tree 
+      when: 
+         stderr!=""  
