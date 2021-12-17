@@ -1,6 +1,6 @@
 --- 
 
-tasks: 
+- tasks: 
    - name: "I want to install webserver"
      apt: 
        name: apache2
