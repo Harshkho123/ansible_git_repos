@@ -8,6 +8,7 @@
         state: present
       when: 
          ansible_os_family == "Debian"   
+      register: myresult   
     
     - name: "I want to install linux webserver"
       yum: 
@@ -15,3 +16,8 @@
         state: present 
       when:      
         ansible_os_family == "RedHat"
+
+    - name: "I want to display results"
+      debug: 
+        msg: "{{myresult}}"
+        
