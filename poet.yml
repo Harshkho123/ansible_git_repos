@@ -15,5 +15,13 @@
        name: git 
       when: 
          myresult.stdout == "ip-172-31-47-91.us-east-2.compute.internal" 
+      tags: "git"
+
+    - name: "I want to install TREE"
+      apt: 
+       name: tree
+      when: 
+         myresult.stdout == "ip-172-31-47-91.us-east-2.compute.internal" 
+      tags: "tree"
 
    
