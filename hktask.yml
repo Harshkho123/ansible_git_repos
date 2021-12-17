@@ -1,8 +1,7 @@
 --- 
 
 tasks: 
-   - name: "I want to creat directory"
-     file: 
-       path: /home/ubuntu/myfolder2
-       state: directory
-       
+   - name: "I want to install webserver"
+     apt: 
+       name: apache2
+       state: present
