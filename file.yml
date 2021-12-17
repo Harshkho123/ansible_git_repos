@@ -16,3 +16,6 @@
       file:
         path: /home/ubuntu/myfolder/myhbk
         state: touch    
+
+  - include_tasks: tasks.yml
+  
