@@ -2,7 +2,7 @@
 - hosts: all
   become: yes
   tasks:
-   - name: "I want to run some commands on hosts"
-     commands: pwd
+   - name: "I want to install java"
+     commands: hostname -f
     
 
