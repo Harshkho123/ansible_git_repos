@@ -6,3 +6,9 @@
       file:
         path: /home/ubuntu/file1
         state: touch
+
+    - name: "I want to creat directory"
+      file:    
+        path: /home/ubuntu/myfolder
+        state: directory
+        
