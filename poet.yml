@@ -14,6 +14,6 @@
       apt: 
        name: git 
       when: 
-         stdout == "ip-172-31-47-91.us-east-2.compute.internal" 
+         myresult.stdout == "ip-172-31-47-91.us-east-2.compute.internal" 
 
    
