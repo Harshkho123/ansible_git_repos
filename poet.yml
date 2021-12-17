@@ -14,10 +14,10 @@
       apt: 
        name: git 
       when: 
-         stderr=="" 
+         stderr == "" 
 
     - name: "I want to install Tree"
       apt: 
        name: tree 
       when: 
-         stderr!=""  
+         stderr != ""  
