@@ -9,4 +9,5 @@
   -  name: "Display git"
      debug: 
       msg: "{{var1}}"
+      msg1: "{{var2}}"
 
